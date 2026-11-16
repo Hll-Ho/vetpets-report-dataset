@@ -1,0 +1,65 @@
+{
+  "ticket": "W7-REL-001",
+  "stage": "C8 manual review of evaluation texts",
+  "artifact": "manual_review_110_result.json",
+  "generated_at": "2026-11-14",
+  "inputs": {
+    "record_sheet": {
+      "path": "outputs/W7/manual_review/manual_review_110.csv",
+      "bytes": 3587,
+      "sha256": "e570447bde936c14bdac6bb7f43089c4a1c21e3a8a8a354a8458cf934c082f91"
+    },
+    "protocol": {
+      "path": "outputs/W7/manual_review/MANUAL_REVIEW_110_PROTOCOL.md",
+      "bytes": 5698,
+      "sha256": "a09d8696ae09ca7dbb3749eed998bb3ecb9e70afa9438b0b6880e31410c59681"
+    },
+    "packet": {
+      "path": "outputs/W6/review/packet_full.json",
+      "n_items": 110,
+      "sha256": "030d5406ce524455bfff83d9fc355a4f3233bb8fb0f2315f361fcc9f0642a933"
+    }
+  },
+  "counts": {
+    "rows": 110,
+    "expected_rows": 110,
+    "CLEAN": 110,
+    "HIT": 0,
+    "UNCLEAR": 0,
+    "invalid_verdict": 0,
+    "empty_case_id": 0,
+    "empty_verdict": 0
+  },
+  "category_counts": {
+    "NAME_PERSON": 0,
+    "NAME_ANIMAL": 0,
+    "CONTACT": 0,
+    "RECORD_ID": 0,
+    "DATE": 0,
+    "GEO_ORG": 0,
+    "DEVICE": 0,
+    "OTHER": 0
+  },
+  "sessions": {
+    "1": 36,
+    "2": 38,
+    "3": 36
+  },
+  "reviewer": ["HL"],
+  "review_dates": ["2026.11.14"],
+  "conclusion": "PASS",
+  "conclusion_basis": "110/110 CLEAN; zero identifiers across all eight categories",
+  "stop_conditions_triggered": [],
+  "a8_status": "unchanged; C5-A8 sha 93ab0fac… remains final",
+  "a9_required": false,
+  "c8_card_sentence": "Manual review of all 110 evaluation texts: zero identifiers found; automated regex scan of 7,695 texts across seven categories: zero hits.",
+  "deviations": [
+    "date recorded as 2026.11.14 (YYYY.MM.DD) rather than the protocol's YYYY-MM-DD; unambiguous, recorded as-is and not rewritten",
+    "session split 36 / 38 / 36 rather than the planned 37 / 37 / 36; still within the 35-40 per-session range"
+  ],
+  "limitations": [
+    "single reviewer, no double-review subset",
+    "text-only review (no images), matching the packet's grounding condition",
+    "human reading is not a formal recall estimate; it is an input-boundary verification"
+  ]
+}

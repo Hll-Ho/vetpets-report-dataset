@@ -1,0 +1,416 @@
+{
+ "schema": "W7_RUBRIC_V11_REPLAY",
+ "version": "v1",
+ "ticket": "W7-REL-001",
+ "generated_at": "2026-11-13",
+ "mode": "offline_rescore_no_api",
+ "inputs_sha256": {
+  "packet_full.json": "030d5406ce524455bfff83d9fc355a4f3233bb8fb0f2315f361fcc9f0642a933",
+  "answer_key_full.json": "bb1e4803e05d4ad1f9411af55d3d3687ee9f207ef0b84f1c7e668b0943d843e4",
+  "review_scores_normalized_v1.json": "dc7540507e416c30df20de3dd5fba84d14a0881ababdd3ef130b457a4e41d5ba",
+  "review_scores_normalized_v1_asSubmitted.json": "7f9fe015f1bef22d70c8a077008a35a2d8fc0d972c7d816efedacad6828fbae5",
+  "adjudication_disagreements.json": "57bd40c951ad135b58d71eef548351e7e76f13fc7c60fcb4f51b703e96fbaf23"
+ },
+ "rubric_sha256": "fd7ede2ddb9a28fe8b165cd75342c46cf3d7abfcbd398d4fa321b43ef5f1296f",
+ "checks": {
+  "R1": {
+   "id": "R1",
+   "requirement": "110-case rescoring; per-case verdict identical to the certified set; 63P/47F, 101/110=91.82%, kappa=0.8359",
+   "per_case_identical": 110,
+   "n": 110,
+   "mismatches": [],
+   "recomputed_verdicts": {
+    "PASS": 63,
+    "FAIL": 47
+   },
+   "certified_vs_judge": {
+    "base": 110,
+    "agree": 101,
+    "rate": 0.9182,
+    "kappa": 0.8359,
+    "confusion": {
+     "TP": 55,
+     "FN": 8,
+     "FP": 1,
+     "TN": 46
+    },
+    "human_verdicts": {
+     "PASS": 63,
+     "FAIL": 47
+    },
+    "judge_verdicts": {
+     "PASS": 56,
+     "FAIL": 54
+    }
+   },
+   "expected": {
+    "human": {
+     "PASS": 63,
+     "FAIL": 47
+    },
+    "agree": 101,
+    "rate": 0.9182,
+    "kappa": 0.8359,
+    "confusion": {
+     "TP": 55,
+     "FN": 8,
+     "FP": 1,
+     "TN": 46
+    }
+   },
+   "pass": true
+  },
+  "R2": {
+   "id": "R2",
+   "requirement": "six-case set unchanged; R-031 E=0.5/score=0.75; R-003 FAIL; no omission+contradiction on the same case",
+   "cases": {
+    "R-003": {
+     "certified_verdict": "FAIL",
+     "replay_verdict": "FAIL",
+     "certified_E": 1.5,
+     "replay_E": 1.5,
+     "replay_score": 0.0,
+     "duplicate_pairs": 0,
+     "omission_and_contradiction": false
+    },
+    "R-031": {
+     "certified_verdict": "FAIL",
+     "replay_verdict": "FAIL",
+     "certified_E": 0.5,
+     "replay_E": 0.5,
+     "replay_score": 0.75,
+     "duplicate_pairs": 0,
+     "omission_and_contradiction": false
+    },
+    "R-042": {
+     "certified_verdict": "FAIL",
+     "replay_verdict": "FAIL",
+     "certified_E": 1.5,
+     "replay_E": 1.5,
+     "replay_score": 0.0,
+     "duplicate_pairs": 0,
+     "omission_and_contradiction": false
+    },
+    "R-063": {
+     "certified_verdict": "FAIL",
+     "replay_verdict": "FAIL",
+     "certified_E": 1.5,
+     "replay_E": 1.5,
+     "replay_score": 0.0,
+     "duplicate_pairs": 0,
+     "omission_and_contradiction": false
+    },
+    "R-073": {
+     "certified_verdict": "FAIL",
+     "replay_verdict": "FAIL",
+     "certified_E": 1.5,
+     "replay_E": 1.5,
+     "replay_score": 0.0,
+     "duplicate_pairs": 0,
+     "omission_and_contradiction": false
+    },
+    "R-074": {
+     "certified_verdict": "FAIL",
+     "replay_verdict": "FAIL",
+     "certified_E": 1.5,
+     "replay_E": 1.5,
+     "replay_score": 0.0,
+     "duplicate_pairs": 0,
+     "omission_and_contradiction": false
+    }
+   },
+   "pass": true
+  },
+  "R3": {
+   "id": "R3",
+   "requirement": "zero duplicate (type,class) in output; R-083 hallucination <= 1",
+   "certified_duplicate_cases": {},
+   "r083_judge_hallucinations": 3,
+   "r083_judge_classes": [
+    "ALV",
+    "BRC",
+    "INT"
+   ],
+   "r083_sentence_groups": {
+    "pulmonary parenchymal opacity appears within the alveolar, interstitial, and bronchial ranges": [
+     "ALV",
+     "BRC",
+     "INT"
+    ]
+   },
+   "r083_effective_under_v11_05": 1,
+   "r083_replay_verdict": "PASS",
+   "note": "W6 judge annotations stay frozen; V11-05 applied as a conformance check only",
+   "pass": true
+  },
+  "R4": {
+   "id": "R4",
+   "requirement": "17 manually marked projection cases all reproduced by the lexicon; R-082 FAIL",
+   "n_reproduced": 17,
+   "case_ids": [
+    "R-001",
+    "R-007",
+    "R-016",
+    "R-031",
+    "R-034",
+    "R-037",
+    "R-050",
+    "R-055",
+    "R-058",
+    "R-061",
+    "R-066",
+    "R-067",
+    "R-068",
+    "R-082",
+    "R-095",
+    "R-106",
+    "R-108"
+   ],
+   "all_fail": true,
+   "r082_verdict": "FAIL",
+   "pass": true
+  },
+  "R5": {
+   "id": "R5",
+   "requirement": "dual-basis agreement, bases labelled",
+   "primary_unique_100": {
+    "base": "unique-100",
+    "n": 100,
+    "raw_pre_registration": {
+     "base": 100,
+     "agree": 68,
+     "rate": 0.68,
+     "kappa": 0.36,
+     "confusion": {
+      "TP": 49,
+      "FN": 31,
+      "FP": 1,
+      "TN": 19
+     },
+     "human_verdicts": {
+      "PASS": 80,
+      "FAIL": 20
+     },
+     "judge_verdicts": {
+      "PASS": 50,
+      "FAIL": 50
+     }
+    },
+    "post_adjudication": {
+     "base": 100,
+     "agree": 91,
+     "rate": 0.91,
+     "kappa": 0.82,
+     "confusion": {
+      "TP": 49,
+      "FN": 8,
+      "FP": 1,
+      "TN": 42
+     },
+     "human_verdicts": {
+      "PASS": 57,
+      "FAIL": 43
+     },
+     "judge_verdicts": {
+      "PASS": 50,
+      "FAIL": 50
+     }
+    }
+   },
+   "continuity_110": {
+    "base": "continuity-110",
+    "n": 110,
+    "raw_pre_registration": {
+     "base": 110,
+     "agree": 76,
+     "rate": 0.6909,
+     "kappa": 0.375,
+     "confusion": {
+      "TP": 55,
+      "FN": 33,
+      "FP": 1,
+      "TN": 21
+     },
+     "human_verdicts": {
+      "PASS": 88,
+      "FAIL": 22
+     },
+     "judge_verdicts": {
+      "PASS": 56,
+      "FAIL": 54
+     }
+    },
+    "post_adjudication": {
+     "base": 110,
+     "agree": 101,
+     "rate": 0.9182,
+     "kappa": 0.8359,
+     "confusion": {
+      "TP": 55,
+      "FN": 8,
+      "FP": 1,
+      "TN": 46
+     },
+     "human_verdicts": {
+      "PASS": 63,
+      "FAIL": 47
+     },
+     "judge_verdicts": {
+      "PASS": 56,
+      "FAIL": 54
+     }
+    }
+   },
+   "duplicate_pairs": 10,
+   "duplicate_verdict_identical": true,
+   "pass": true
+  },
+  "R6": {
+   "id": "R6",
+   "requirement": "every E>0 case is FAIL; no per-case score cutoff",
+   "n_E_positive": 47,
+   "all_fail": true,
+   "highest_score_among_fail": [
+    0.8333,
+    "R-033"
+   ],
+   "pass_cases_with_nonzero_E": [],
+   "pass": true
+  },
+  "R7": {
+   "id": "R7",
+   "requirement": "no negation-opening hallucination evidence; no hallucination on correct research-tier mention; no Family A/C hallucination",
+   "certified_negation_opening": [],
+   "certified_research_tier": [],
+   "w6_judge_negation_opening_record": [
+    {
+     "packet_id": "R-040",
+     "class": "PMD",
+     "evidence": "no free pleural or mediastinal gas is seen"
+    },
+    {
+     "packet_id": "R-044",
+     "class": "DPH",
+     "evidence": "no hernia with associated displacement of abdominal viscera"
+    }
+   ],
+   "w6_judge_research_tier_record": [
+    {
+     "packet_id": "R-004",
+     "class": "INT"
+    },
+    {
+     "packet_id": "R-083",
+     "class": "INT"
+    },
+    {
+     "packet_id": "R-091",
+     "class": "INT"
+    }
+   ],
+   "note": "W6 judge annotations are frozen and prospective-only; the pass condition is asserted on the certified (adjudicated) annotations",
+   "pass": true
+  },
+  "R8": {
+   "id": "R8",
+   "requirement": "non-evaluable family: R-042/063/073 = 1.5; R-040/R-044 = 0; Family A examples carry no direction-test error",
+   "cases": {
+    "R-042": {
+     "gt": "TRC",
+     "certified_verdict": "FAIL",
+     "replay_E": 1.5,
+     "replay_verdict": "FAIL",
+     "errors": [
+      [
+       "contradiction",
+       "TRC"
+      ]
+     ],
+     "direction_errors": [
+      [
+       "contradiction",
+       "TRC"
+      ]
+     ]
+    },
+    "R-063": {
+     "gt": "TRC",
+     "certified_verdict": "FAIL",
+     "replay_E": 1.5,
+     "replay_verdict": "FAIL",
+     "errors": [
+      [
+       "contradiction",
+       "TRC"
+      ]
+     ],
+     "direction_errors": [
+      [
+       "contradiction",
+       "TRC"
+      ]
+     ]
+    },
+    "R-073": {
+     "gt": "PMD",
+     "certified_verdict": "FAIL",
+     "replay_E": 1.5,
+     "replay_verdict": "FAIL",
+     "errors": [
+      [
+       "contradiction",
+       "PMD"
+      ]
+     ],
+     "direction_errors": [
+      [
+       "contradiction",
+       "PMD"
+      ]
+     ]
+    },
+    "R-040": {
+     "gt": "NOF",
+     "certified_verdict": "PASS",
+     "replay_E": 0,
+     "replay_verdict": "PASS",
+     "errors": [],
+     "direction_errors": []
+    },
+    "R-044": {
+     "gt": "NOF",
+     "certified_verdict": "PASS",
+     "replay_E": 0,
+     "replay_verdict": "PASS",
+     "errors": [],
+     "direction_errors": []
+    },
+    "R-009": {
+     "gt": "PLE",
+     "certified_verdict": "PASS",
+     "replay_E": 0,
+     "replay_verdict": "PASS",
+     "errors": [],
+     "direction_errors": []
+    },
+    "R-072": {
+     "gt": "BRC",
+     "certified_verdict": "FAIL",
+     "replay_E": 0.5,
+     "replay_verdict": "FAIL",
+     "errors": [
+      [
+       "unsupported_claim",
+       "词表外诊断"
+      ]
+     ],
+     "direction_errors": []
+    }
+   },
+   "measurement_note": "R-072 (Family A precedent: 'cannot be excluded') carries E=0.5 from an unrelated unsupported_claim ('inflammatory airway disease', DADJ-21), not from the survival language. The Family A check is therefore asserted on direction errors (contradiction/omission), not on total E. Disclosed as a check-definition note, not a rubric drift: no clause text was changed.",
+   "pass": true
+  }
+ },
+ "score_field_drift": [],
+ "overall_pass": true
+}

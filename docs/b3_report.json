@@ -1,0 +1,34 @@
+{
+ "schema": "W7_B3_RELEASE_REPORT",
+ "ticket": "W7-REL-001",
+ "date": "2026-11-13",
+ "seed": 20261113,
+ "n_cases": 7695,
+ "manifest_sha_source": "e:\\vetpets\\outputs\\W7\\release\\manifest_7695.csv",
+ "channel_a": {
+  "empty_or_vocab_errors": [],
+  "case_id_unique": true,
+  "image_missing": 0,
+  "image_missing_examples": []
+ },
+ "channel_b": {
+  "n_sampled": 770,
+  "png_info_noncompliant": [],
+  "note": "DICOM is not part of the release; file-level DICOM scrub runs at export only if B4 publishes DICOM"
+ },
+ "channel_c": {
+  "n_scanned": 7695,
+  "hits": {
+   "email": 0,
+   "phone_intl": 0,
+   "phone_local": 0,
+   "mrn": 0,
+   "owner": 0,
+   "title_name": 0,
+   "id_number": 0
+  },
+  "samples": {},
+  "note": "human review of the 110-case subset remains a manual step"
+ },
+ "overall_pass": true
+}

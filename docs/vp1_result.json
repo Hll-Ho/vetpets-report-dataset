@@ -1,0 +1,27 @@
+{
+  "check": "V-P1 published-image filename opacity",
+  "date": "2026-11-13",
+  "published_pngs": 7695,
+  "upstream_xlsx": {
+    "path": "data/File_list_with_tags.xlsx",
+    "sha256": "d81020384ef03e7b257a2e74cdeaf0ee479b33a974e464af3574236a8128b779",
+    "md5": "45c46fd5af3e562dadeeafc198c9a628",
+    "rows": 9973,
+    "unique_filenames": 9971,
+    "patientname_nonempty": 9969
+  },
+  "comparison": {
+    "method": "PNG stem (no extension) vs upstream FileName column stripped of .dcm",
+    "matches": 7695,
+    "match_rate": "7695/7695 = 100%"
+  },
+  "result": "FAIL",
+  "risk": "filename is a live join key: PNG name -> upstream xlsx row -> PatientName; manifest's exclusion of filename becomes void",
+  "decision": "pre-authorized full rename to case_id.png",
+  "remediation": {
+    "method": "arcname = case_id.png at pack time (ZIP_STORED); no intermediate copy",
+    "changes_original_files": false,
+    "join_after_fix": "case_id.png <-> manifest.case_id (1:1, unique); no mapping table published",
+    "stop_required": false
+  }
+}

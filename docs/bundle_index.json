@@ -1,0 +1,136 @@
+{
+  "scheme": "16 independent zip chunks, ZIP_STORED, arcname=<case_id>.png",
+  "n_chunks": 16,
+  "n_cases": 7695,
+  "total_bytes": 16089271889,
+  "chunks": [
+    {
+      "bundle": "W7-VetXRay-Report_images_chunk01.zip",
+      "first_case": "W4-00001",
+      "last_case": "W4-00469",
+      "n_cases": 469,
+      "bytes": 1004660889,
+      "sha256": "369da4f0776559dec3de26672217e9e415f4cc027d1920b97bd51f892651e9df"
+    },
+    {
+      "bundle": "W7-VetXRay-Report_images_chunk02.zip",
+      "first_case": "W4-00470",
+      "last_case": "W4-00962",
+      "n_cases": 493,
+      "bytes": 1003238962,
+      "sha256": "8ed40d19b71d74ab2e457fd89eddfb9fed936bb0042d4f52d435f22a841e9774"
+    },
+    {
+      "bundle": "W7-VetXRay-Report_images_chunk03.zip",
+      "first_case": "W4-00963",
+      "last_case": "W4-01437",
+      "n_cases": 475,
+      "bytes": 1005136906,
+      "sha256": "7584ebe1c86939f9093155775f7ba0324b7834f63811c78c305dbc35f404bbb6"
+    },
+    {
+      "bundle": "W7-VetXRay-Report_images_chunk04.zip",
+      "first_case": "W4-01438",
+      "last_case": "W4-01922",
+      "n_cases": 485,
+      "bytes": 1003873271,
+      "sha256": "fffb74f3efedc831dcbdbeb8b898ca931971ca22526851bf92cb277793734372"
+    },
+    {
+      "bundle": "W7-VetXRay-Report_images_chunk05.zip",
+      "first_case": "W4-01923",
+      "last_case": "W4-02379",
+      "n_cases": 457,
+      "bytes": 1004967265,
+      "sha256": "75bfbc6e61f60e61d40332a1ce20a83906771d9ce3631456bbcf41379e56ec69"
+    },
+    {
+      "bundle": "W7-VetXRay-Report_images_chunk06.zip",
+      "first_case": "W4-02380",
+      "last_case": "W4-02822",
+      "n_cases": 443,
+      "bytes": 1002058321,
+      "sha256": "bca0380e3cca1234cbbf1405fb29f3aec0bd951ad3d9c356e620bf8333c2b6ed"
+    },
+    {
+      "bundle": "W7-VetXRay-Report_images_chunk07.zip",
+      "first_case": "W4-02823",
+      "last_case": "W4-03290",
+      "n_cases": 468,
+      "bytes": 1004505890,
+      "sha256": "5f08af7a6359bff77edfbb85cfce6484f52e278b3cc53765d631cb973862cc8b"
+    },
+    {
+      "bundle": "W7-VetXRay-Report_images_chunk08.zip",
+      "first_case": "W4-03291",
+      "last_case": "W4-03820",
+      "n_cases": 530,
+      "bytes": 1004953805,
+      "sha256": "0a32532fc6763eb1f4fd326099af51c61a436cc4c8c241a5fdfde84f62ff2870"
+    },
+    {
+      "bundle": "W7-VetXRay-Report_images_chunk09.zip",
+      "first_case": "W4-03821",
+      "last_case": "W4-04316",
+      "n_cases": 496,
+      "bytes": 1005229615,
+      "sha256": "f2549809ff8142c7863858c2cdf3b799c4b649e4dc51acbab8f0de8f1fb58e1d"
+    },
+    {
+      "bundle": "W7-VetXRay-Report_images_chunk10.zip",
+      "first_case": "W4-04317",
+      "last_case": "W4-04797",
+      "n_cases": 481,
+      "bytes": 1003450947,
+      "sha256": "75d10c16eaebdcdc7b5b4436c5bd10c524fc3b274869f48f3381fa80c06022f5"
+    },
+    {
+      "bundle": "W7-VetXRay-Report_images_chunk11.zip",
+      "first_case": "W4-04798",
+      "last_case": "W4-05265",
+      "n_cases": 468,
+      "bytes": 1003574437,
+      "sha256": "dcb161cad0069a09a9db0b0efa6d5a9b722735b8bea72ab14f2c4d675c7b85d2"
+    },
+    {
+      "bundle": "W7-VetXRay-Report_images_chunk12.zip",
+      "first_case": "W4-05266",
+      "last_case": "W4-05745",
+      "n_cases": 480,
+      "bytes": 1004209724,
+      "sha256": "69c21aef39f44de287c5f2295962666757c5d031d3f6f6b9194926f02fc7df55"
+    },
+    {
+      "bundle": "W7-VetXRay-Report_images_chunk13.zip",
+      "first_case": "W4-05746",
+      "last_case": "W4-06194",
+      "n_cases": 449,
+      "bytes": 1005251313,
+      "sha256": "59745979c0ef6565aab942921b78e6eafbbccb919b7eb37e3cdbd998e7487975"
+    },
+    {
+      "bundle": "W7-VetXRay-Report_images_chunk14.zip",
+      "first_case": "W4-06195",
+      "last_case": "W4-06682",
+      "n_cases": 488,
+      "bytes": 1003958820,
+      "sha256": "1daf8f31d45735269f5adc7973bb042e2e7e8aac1ec11633452946e24a3d5ec0"
+    },
+    {
+      "bundle": "W7-VetXRay-Report_images_chunk15.zip",
+      "first_case": "W4-06683",
+      "last_case": "W4-07183",
+      "n_cases": 501,
+      "bytes": 1005266195,
+      "sha256": "d7361419d0dee8cc7d281d1c5b68479e33b8d75a91264f84a46bf56f502ba6e8"
+    },
+    {
+      "bundle": "W7-VetXRay-Report_images_chunk16.zip",
+      "first_case": "W4-07184",
+      "last_case": "W4-07695",
+      "n_cases": 512,
+      "bytes": 1024935529,
+      "sha256": "cf6a1af515074e697548ca3b0eee6c2de8605a69f41480055eb2e381a82b0e14"
+    }
+  ]
+}
