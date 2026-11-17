@@ -23,6 +23,28 @@ Companion repository for **W7-VetXRay-Report**: 7,695 de-identified veterinary t
 
 Dataset payload (images, report texts) is hosted on Zenodo and is not duplicated here.
 
+## Usage
+
+Download `reports_7695.jsonl` and `manifest_7695.csv` from the [Zenodo record](https://doi.org/10.5281/zenodo.24200927), then load the reports without any hub dependency:
+
+```python
+from datasets import load_dataset
+
+ds = load_dataset("json", data_files="reports_7695.jsonl", split="train")
+print(ds[0]["case_id"], ds[0]["content"]["report_findings"])
+```
+
+Image chunks are independent ZIP archives of `<case_id>.png`; join them to the manifest on `case_id`:
+
+```python
+import zipfile, pandas as pd
+
+manifest = pd.read_csv("manifest_7695.csv")          # case_id, species, projection, gt_labels
+with zipfile.ZipFile("W7-VetXRay-Report_images_chunk01.zip") as z:
+    with z.open("W4-00001.png") as f:
+        png_bytes = f.read()
+```
+
 ## Composition
 
 - 7,695 cases · 3,218 patient identifiers · projections LL 4,459 / DV 2,431 / VD 805
@@ -46,7 +68,7 @@ Post-adjudication consensus agreement is **101/110 = 91.82%** (κ = 0.8359); on 
 
 Contains data derived from: Banzato, T., Burti, S., Zotti, A., & Wodzinski, M., *VetXRay – A Dataset of 9,882 Manually Annotated Canine and Feline Thoracic Radiographs with Lesion and Image Quality Annotations*, Zenodo, DOI 10.5281/zenodo.19051776 (concept DOI 10.5281/zenodo.18999729), licensed under CC BY 4.0.
 
-Images were re-encoded to PNG from the upstream DICOM distribution, all DICOM headers were stripped, and file names were replaced with case identifiers before release; modifications are noted per CC BY 4.0 §3(a). A subset of 7,695 of the upstream 9,973 images is included.
+Images were re-encoded to PNG from the upstream DICOM distribution, all DICOM headers were stripped, and file names were replaced with case identifiers before release; modifications are noted per CC BY 4.0 §3(a). The 7,695 images released here are a subset of the 9,882 annotated radiographs in the upstream record (40.8 GB of source archives); this is not a full mirror.
 
 ## Intended use and limits
 
