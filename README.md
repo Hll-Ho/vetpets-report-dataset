@@ -2,7 +2,7 @@
 
 Companion repository for **W7-VetXRay-Report**: 7,695 de-identified veterinary thoracic radiographs (PNG) with label-conditioned, model-generated radiology reports, plus the full evaluation artifact chain.
 
-**Dataset DOI:** _(to be inserted at publication; this line is replaced immediately after the Zenodo record is published)_
+**Dataset DOI:** [10.5281/zenodo.24200927](https://doi.org/10.5281/zenodo.24200927)
 
 ## What is in this repository
 
