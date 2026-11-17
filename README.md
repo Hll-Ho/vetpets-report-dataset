@@ -47,7 +47,7 @@ with zipfile.ZipFile("W7-VetXRay-Report_images_chunk01.zip") as z:
 
 ## Composition
 
-- 7,695 cases · 3,218 patient identifiers · projections LL 4,459 / DV 2,431 / VD 805
+- 7,695 cases · projections LL 4,459 / DV 2,431 / VD 805
 - Species: dog 5,998 · cat 1,659 · unknown 33 · other 5
 - Labels per case: 1 → 6,324 · 2 → 1,222 · 3 → 133 · 4 → 16
 
